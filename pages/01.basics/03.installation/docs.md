@@ -77,27 +77,27 @@ Another technique under consideration is stakes-based incentive balancing. In or
 
 ## Risks and attacks
 Bob wants to get his message before trigger event
-1 Bob's address couldn't be found anywhere in the contract or in message saved to
+1. Bob's address couldn't be found anywhere in the contract or in message saved to
 blockchain. To receive the encrypted message, he attempts to decrypt every message with enough already submitted keeper key parts.
 
 Keeper wants to sell his decrypted key part to Bob before trigger event
-1 To reveal who Bob is, keepers must decrypt the message. It's impossible to keeper to
+1. To reveal who Bob is, keepers must decrypt the message. It's impossible to keeper to
 do this without gathering 66% of keepers' decrypted key parts.
-2 Only way to prove Bob you're a real keeper and could decrypt your key part is to
+2. Only way to prove Bob you're a real keeper and could decrypt your key part is to
 reveal that key part. Once the key part is revealed, Bob has no motivation to pay for it.
 
 Sybil attack by keeper
-1 Alice chooses keepers by some algorithm (could be random, could be with some
+1. Alice chooses keepers by some algorithm (could be random, could be with some
 optimisation technique — knapsack problem, more or less), so there's no strict way
 to get threshold amount of keepers in the single contract.
-2 Bitcannery encryption scheme is designed so that one needs to get decrypted key parts of
+2. Bitcannery encryption scheme is designed so that one needs to get decrypted key parts of
 66% of keepers to be able to decrypt the message. That's bigger percentage than is needed to perform 51% attack on the blockchain (though of course these are non-comparable numbers).
-3 Stakes system makes it expensive to get hold of enough key parts to be able to decrypt the message
+3. Stakes system makes it expensive to get hold of enough key parts to be able to decrypt the message
 
 Keepers become inactive and miss their checkins
-1 Bitcannery uses Shamir's secret sharing method for the key Alice handles to keepers. This
+1. Bitcannery uses Shamir's secret sharing method for the key Alice handles to keepers. This
 method allows to decrypt message without every single keeper's key. Default redundancy level for Bitcannery contracts is 66% — we need two thirds of all the key parts to decrypt the message.
-2 If number of active keepers comes close to minimal required, Alice could close original contract and create another one with the same message. Bitcannery calls this procedure “rotation”, and it's automated by client applications.
+2. If number of active keepers comes close to minimal required, Alice could close original contract and create another one with the same message. Bitcannery calls this procedure “rotation”, and it's automated by client applications.
 
 ## Status and plans
 
