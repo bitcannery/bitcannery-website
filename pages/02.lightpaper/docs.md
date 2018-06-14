@@ -1,5 +1,5 @@
 ---
-title: 'Light paper'
+title: 'Light Paper'
 taxonomy:
     category:
         - docs
