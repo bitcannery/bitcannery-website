@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-# Bitcannery — secure trustless deferred message relay
+## Bitcannery - secure trustless deferred message relay
 
 ## Summary
 
@@ -110,5 +110,7 @@ We want in nearest future: 1) explore options of building stakes system; 2) expl
 ### References
 
 [^1]: Gwern Branwen, Time-lock encryption. https://www.gwern.net/Self-decrypting-files
-[^2]: OpenZeppelin, Heritable contract. https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/ownership/Herit able.sol
+
+[^2]: OpenZeppelin, Heritable contract. https://github.com/OpenZeppelin/zeppelin-solidity/blob/master/contracts/ownership/Heritable.sol
+
 [^3]: Shamir, Adi (1979), "How to share a secret", Communications of the ACM, 22 (11): 612–613, doi:10.1145/359168.359176.
