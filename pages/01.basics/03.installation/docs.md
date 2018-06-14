@@ -35,7 +35,7 @@ of Smart contract ownership; doesn't fit free-form message relay use-case. [^2]
 - Mywish ([mywish.io](http://mywish.io)): implemets good traits of 'heritable' Smart contract + checks ownership transfer automatically with a network of actors; doesn't cover free-form message relay use-case.
 - Keep network ([keep.network](http://keep.network)): supports robust suite of use-cases, but doesn't cover free-form message relay use-case. Keep was designed with more broad applicability in mind and seems not so well defended against different attacks. That being said, the project seems most viable of all exisiting blockchain-based options.
 - Safe Heaven ([safehaven.io](http://safehaven.io)): uses key sharing methods, specializes on passing funds, doesn't cover free-form message relay use-case, has technical restrictions.
-- Enigma (enigma.co): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
+- Enigma ([enigma.co](http://enigma.co)): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
 
 ## Bitcannery
 
