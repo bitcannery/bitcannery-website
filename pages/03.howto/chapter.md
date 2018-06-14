@@ -1,7 +1,8 @@
 ---
-title: Intermediate
+title: Howto
 taxonomy:
-    category: docs
+    category:
+        - docs
 child_type: docs
 ---
 
