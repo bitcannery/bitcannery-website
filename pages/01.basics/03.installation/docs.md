@@ -1,7 +1,9 @@
 ---
-title: Installation
+title: 'Light paper'
 taxonomy:
-    category: docs
+    category:
+        - docs
+visible: true
 ---
 
 Lorem markdownum fama iusserat **sit trunca**, isto et quid dolens Aeetias.
