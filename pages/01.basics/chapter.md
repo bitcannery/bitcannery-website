@@ -8,4 +8,4 @@ child_type: docs
 
 ![](/images/bitcannery_coat_of_arms.png)
 
-**The way to can your bits**
+canning your bits
