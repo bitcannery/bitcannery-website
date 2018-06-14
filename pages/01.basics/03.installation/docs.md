@@ -32,10 +32,10 @@ will be decrypted almost instantly, doesn't fit dead-man-switch use-case. [^1]
 4. 'Heritable' Ethereum Smart contract: well suited for passing funds and rights in form
 of Smart contract ownership; doesn't fit free-form message relay use-case. [^2]
 5. Specialized blockchain-based solutions:
-a. Mywish (mywish.io): implemets good traits of 'heritable' Smart contract + checks ownership transfer automatically with a network of actors; doesn't cover free-form message relay use-case.
-b. Keep network (keep.network): supports robust suite of use-cases, but doesn't cover free-form message relay use-case. Keep was designed with more broad applicability in mind and seems not so well defended against different attacks. That being said, the project seems most viable of all exisiting blockchain-based options.
-c. Safe Heaven (safehaven.io): uses key sharing methods, specializes on passing funds, doesn't cover free-form message relay use-case, has technical restrictions.
-d. Enigma (enigma.co): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
+- a. Mywish (mywish.io): implemets good traits of 'heritable' Smart contract + checks ownership transfer automatically with a network of actors; doesn't cover free-form message relay use-case.
+- b. Keep network (keep.network): supports robust suite of use-cases, but doesn't cover free-form message relay use-case. Keep was designed with more broad applicability in mind and seems not so well defended against different attacks. That being said, the project seems most viable of all exisiting blockchain-based options.
+- c. Safe Heaven (safehaven.io): uses key sharing methods, specializes on passing funds, doesn't cover free-form message relay use-case, has technical restrictions.
+- d. Enigma (enigma.co): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
 
 ## Bitcannery
 
@@ -45,14 +45,13 @@ Bitcannery system leans on secret sharing techniques and the network of third-pa
 The main idea is to store message in the blockchain, but encrypt it so neither Bob nor anyone else could read it before trigger event and only Bob could after that event. As all the data in blockchain is open to read for anyone, we need to encrypt message at least two times: first to prevent anyone but Bob to read it (use asymmetric crypto), second — to prevent Bob from accessing his message before trigger event. To open the message after trigger event, Bitcannery uses a network of `keepers` — agents with access to parts of the decryption key. The key is divided with Shamir's secret sharing method [^3], so we don't need every single key part to be able to decrypt Bob's message. After saving encrypted key partsand twice-encrypted message to blockchain smart contract, Alice performs canary checkins within predefined time interval. After missed Alice's checkin keepers decrypt their key parts and send them to smart contract. Once enough keepers had revealed their key parts, Bob restores decryption key from keepers' shards, and then decrypts message from smart contract twice, receiving the Alice's message.
 
 Note that Bitcannery could be used for both timed-out message delivery and dead-man-switch-like mechanics. The main difference would be trigger event for keepers to reveal their parts of the secret.
-Some parts of current Bitcannery implementation are dependant on specific blockchain features. For reference implementation we've used Ethereum Smart contracts. 1) Smart contract couldn't call its own methods; 2) There's no timeouts for Ethereum Smart contracts; 3) There's no private data store for Ethereum Smart contracts.
+Some parts of current Bitcannery implementation are dependent on specific blockchain features. For reference implementation we've used Ethereum Smart contracts. 1) Smart contract couldn't call its own methods; 2) There's no timeouts for Ethereum Smart contracts; 3) There's no private data store for Ethereum Smart contracts.
 
 1)+2) yields we need someone to call Smart contract to check whether Alice has missed her canary checkin or not; 3) yields the very impossibility to store only once-encrypted message and reveal it after timeout without any extra devices or actors.
 That being said, one should note that Bitcannery protocol could be implemented on top of any blockchain with Smart contracts with comparable to Ethereum's properties.
 
 There are finer details:
-1. To get list of keepers to choose from, Alice starts her contract in `call for keepers`
-state. Actors interested in being a keeper for Alice contract send proposals with their payment rate and public keys. All Bitcannery contracts are registered in registry-contract, so keepers could find new ones to send proposals to.
+1. To get list of keepers to choose from, Alice starts her contract in `call for keepers` state. Actors interested in being a keeper for Alice contract send proposals with their payment rate and public keys. All Bitcannery contracts are registered in registry-contract, so keepers could find new ones to send proposals to.
 After enough keeper proposals are gathered, Alice chooses which ones to accept. With keepers list accepted, she saves the message and key parts in smart contract and starts canary checkins.
 2. Due to the fact that Ethereum Smart contracts couldn't initiate actions, we need third party actor to check whether trigger event has come or not. In current design this actors are contract keepers.
 3. It's very likely not all the keepers will stay active at all times. If a keeper misses couple checkin periods in a row, he will no longer receive a keeping fee.
