@@ -1,12 +1,11 @@
 ---
 title: Basics
 taxonomy:
-    category: docs
+    category:
+        - docs
 child_type: docs
 ---
 
-### Chapter 1
-
-# Basics
+![](/images/bitcannery_coat_of_arms.png)
 
 Discover the **basic** principles.
