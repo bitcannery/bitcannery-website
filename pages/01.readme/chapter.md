@@ -1,5 +1,5 @@
 ---
-title: Basics
+title: Readme
 taxonomy:
     category:
         - docs
