@@ -32,10 +32,10 @@ will be decrypted almost instantly, doesn't fit dead-man-switch use-case. [^1]
 4. 'Heritable' Ethereum Smart contract: well suited for passing funds and rights in form
 of Smart contract ownership; doesn't fit free-form message relay use-case. [^2]
 5. Specialized blockchain-based solutions:
-- a. Mywish (mywish.io): implemets good traits of 'heritable' Smart contract + checks ownership transfer automatically with a network of actors; doesn't cover free-form message relay use-case.
-- b. Keep network (keep.network): supports robust suite of use-cases, but doesn't cover free-form message relay use-case. Keep was designed with more broad applicability in mind and seems not so well defended against different attacks. That being said, the project seems most viable of all exisiting blockchain-based options.
-- c. Safe Heaven (safehaven.io): uses key sharing methods, specializes on passing funds, doesn't cover free-form message relay use-case, has technical restrictions.
-- d. Enigma (enigma.co): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
+- Mywish ([mywish.io](http://mywish.io)): implemets good traits of 'heritable' Smart contract + checks ownership transfer automatically with a network of actors; doesn't cover free-form message relay use-case.
+- Keep network ([keep.network](http://keep.network)): supports robust suite of use-cases, but doesn't cover free-form message relay use-case. Keep was designed with more broad applicability in mind and seems not so well defended against different attacks. That being said, the project seems most viable of all exisiting blockchain-based options.
+- Safe Heaven ([safehaven.io](http://safehaven.io)): uses key sharing methods, specializes on passing funds, doesn't cover free-form message relay use-case, has technical restrictions.
+- Enigma (enigma.co): builds privacy layer for Smart contracts as a Layer 2 solution. Probably could be used for dead-man-switch use-case, but doesn't seem production-ready yet.
 
 ## Bitcannery
 
