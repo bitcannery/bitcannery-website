@@ -4,9 +4,8 @@ taxonomy:
     category:
         - docs
 child_type: docs
+visible: true
 ---
-
-# How to
 
 You can download bitcannery-cli binary from the [list of recent releases](/releases) or [click here](#...) to get the newest version.
 
