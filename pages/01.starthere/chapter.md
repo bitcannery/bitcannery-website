@@ -12,4 +12,4 @@ child_type: docs
 
 The published data may or may not be further encrypted for a particular recipient(s).
 
-[More details](https://bitcannery.net/overview)      [Howto](https://bitcannery.net/howto)     [Source code](https://github.com/bitcannery/bitcannery-cli)
+[More details](https://bitcannery.net/overview)   &nbsp;|&nbsp;   [Howto](https://bitcannery.net/howto)  &nbsp;|&nbsp;   [Source code](https://github.com/bitcannery/bitcannery-cli)
