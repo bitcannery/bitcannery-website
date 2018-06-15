@@ -1,12 +1,10 @@
 ---
-title: 'Light Paper'
+title: Overview
 taxonomy:
     category:
         - docs
 visible: true
 ---
-
-## Bitcannery - secure trustless deferred message relay
 
 Secrets are meant to be shared only between the two. Modern technology — mostly web protocols powered by cryptography — has all the means to pass message from one party to another without giving access to anyone besides these parties; most obvious example are e2e encrypted chat apps like Signal or Keybase. But if we want to decouple moments of passing a message and possibility to read it — all the existing ways require trusting third party at some moment.
 
