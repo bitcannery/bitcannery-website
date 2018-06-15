@@ -6,10 +6,13 @@ taxonomy:
 visible: true
 ---
 
-Secrets are meant to be shared only between the two. Modern technology — mostly web protocols powered by cryptography — has all the means to pass message from one party to another without giving access to anyone besides these parties; most obvious example are e2e encrypted chat apps like Signal or Keybase. But if we want to decouple moments of passing a message and possibility to read it — all the existing ways require trusting third party at some moment.
+Current web protocols powered by cryptography provide sutisfactory means to pass a secret message from one person (the sender) to another (the recipient) without exposing it to anyone else, such as end-to-end encrypted communications tools like Signal. But to shift the time of passing an encrypted message to the future — we have to trust a third party to do it for us.
 
-Bitcannery creates cryptoeconomics system for secure trustless deferred message relay . It achieves secure and trustless delivery of encrypted messages which could not be read before particular event in the future. This trigger event should be tied to the state of a blockchain and be verifiable by Smart contract. To get this happen, system is built on top of the network of third-party agents — 'keepers'. Keepers don't have any access to original message, they hold parts of secret required to decrypt the message and are motivated to disclose their parts of secret only after trigger event in the future.
-Bitcannery was built and designed with number of use-cases in mind. In particular, it's well-suited for postponed secret messages and passing a secret text with dead-man switch.
+Our system attempts to limit the the exposure of a secret to a third party and achieve a secure and trustless delivery of encrypted messages which could not be read by the recipient before a trigger event. To make this happen, system relies on the network of third-party agents — the keepers. Keepers don't have any access to the original message, they merely hold parts of a key required to decrypt the message and are motivated to keep it secret until a trigger event in the future.
+
+The trigger event is continuously postponed by the sender, and only occurs when the sender stops actively checking in. In other words, the encrypted message is published when the sender stops preventing it from publishing.
+
+Such system can be useful for releasing a password to encrypted files to relatives or friends in case of amnesia, for releasing sensitive data about rival party in case of imprisonment or other restraint, for leaving inheritance, for anonymity-preserving key escrow, for locking away data from oneself, for blackmailing, and for many other cases.
 
 ## Problem
 
