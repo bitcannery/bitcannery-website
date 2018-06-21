@@ -7,7 +7,7 @@ child_type: docs
 visible: true
 ---
 
-You can download bitcannery-cli binary from the [list of recent releases](/releases) or [click here](#...) to get the newest version.
+You can download bitcannery-cli binary from the [recent release](https://github.com/bitcannery/bitcannery-cli/releases/latest/) or [click here](https://github.com/bitcannery/bitcannery-cli/releases/download/demo/bitcannery-cli) to download the newest version.
 
 1.  [Send secret message](#send-message)
 2.  [Check-in](#delay-message)
