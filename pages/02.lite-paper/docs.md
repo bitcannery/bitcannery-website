@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: 'Lite Paper'
 taxonomy:
     category:
         - docs
