@@ -95,7 +95,7 @@ To run your own Keeper node, you need to specify your keeping fee first.
 ./bitcannery-cli keeper set-fee <X_Gwei>
 ```
 
-<X_Gwei> here is a daily fee in ether you want to receive for keeping. If integer is passed, it's treated as wei amount; you could pass in strings like `1000 wei`, `10 Gwei` or `1 ether`.
+`<X_Gwei>` here is a daily fee in ether you want to receive for keeping. If integer is passed, it's treated as wei amount; you could pass in strings like `1000 wei`, `10 Gwei` or `1 ether`.
 
 Then run this command to start keeper node:
 
