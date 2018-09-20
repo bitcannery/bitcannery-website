@@ -1,5 +1,6 @@
 ---
 title: Overview
+media_order: coat_of_arms.png
 taxonomy:
     category:
         - docs
@@ -8,6 +9,8 @@ visible: true
 ---
 
 ![](/images/bitcannery_coat_of_arms.png)
+
+![](coat_of_arms.png)
 
 *Bitcannery* is a system designed to provide an encryption with extendable self-decryption time. In a nutshell, such encryption ensures that a message is automatically decrypted after a certain point in the future. This point in time can be continuously extended by the sender of the message.
 
