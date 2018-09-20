@@ -19,7 +19,7 @@ You can find a [source code on Github](https://github.com/bitcannery/bitcannery-
 
 To download the binary and see some usage examples please visit the [How-to](https://bitcannery.net/howto).
 
-For more detailed information please read the [Lightpaper]https://bitcannery.net/lightpaper.
+For more detailed information please read the [Lightpaper](https://bitcannery.net/lightpaper).
 
 ## How it works?
 
