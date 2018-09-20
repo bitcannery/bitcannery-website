@@ -1,6 +1,6 @@
 ---
 title: Overview
-media_order: coat_of_arms.png
+media_order: 'coat_of_arms.png,decrypting_secret_on_the_blockchain.jpg,encrypting_secret_on_a_blockchain.jpg,storing_secrets_on_a_blockchain.jpg'
 taxonomy:
     category:
         - docs
@@ -24,19 +24,24 @@ For more detailed information please read the [Lightpaper](https://bitcannery.ne
 
 • You have an information you want to keep. We call it a "secret" and you are a "secret owner" in this scenario.
 
-
 • Using *Bitcannery*, you encode a secret locally with the first key.
 
 • *Bitcannery* generates a second key, encodes the secret one more time and publishes the double encrypted secret on the blockchain.
 
 • *Bitcannery* then splits the second key in chunks and distribues them between agents (using Shamir Secret Sharing algorithm) who keep the chunks on their machines. We call them the "keepers".
 
+![](encrypting_secret_on_a_blockchain.jpg)
+
 • Using *Bitcannery*, you perform a predefined periodic action (run some script or visit some website). We call it a "check-in".
 
 • As long as you check-in, your secret is encoded.
 
+![](storing_secrets_on_a_blockchain.jpg)
+
 • When you stop checking-in, keepers return their key parts and the second key is
-re-assembled. Your secret gets decoded and published on the blockchain
+re-assembled. Your secret gets decoded and published on the blockchain.
+
+![](decrypting_secret_on_the_blockchain.jpg)
 
 ## Security
 
