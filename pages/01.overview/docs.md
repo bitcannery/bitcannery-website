@@ -28,7 +28,7 @@ For more detailed information please read the [Lightpaper](https://bitcannery.ne
 
 • *Bitcannery* generates a second key, encodes the secret one more time and publishes the double encrypted secret on the blockchain.
 
-• *Bitcannery* then splits the second key in chunks and distribues them between agents (using Shamir Secret Sharing algorithm) who keep the chunks on their machines. We call them the "keepers".
+• *Bitcannery* then splits the second key in chunks and distribues them between agents (using [Shamir's Secret Sharing algorithm](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)) who keep the chunks on their machines. We call them the "keepers".
 
 ![](encrypting_secret_on_a_blockchain.jpg)
 
