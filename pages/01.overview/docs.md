@@ -16,12 +16,15 @@ Real life applications may include data escrow, leaking, last-resort backups, in
 At the moment it is implemented on the Ethereum blockchain and deployed to the Rinkeby testnet, but it doesn't have to be limited to Ethereum. *Bitcannery* system can be generalized for virtually any distributed ledger supporting smart contracts.
 
 You can find a [source code on Github](https://github.com/bitcannery/bitcannery-cli).
+
 To download the binary and see some usage examples please visit the [How-to](https://bitcannery.net/howto).
+
 For more detailed information please read the [Lightpaper]https://bitcannery.net/lightpaper.
 
 ## How it works?
 
 • You have an information you want to keep. We call it a "secret" and you are a "secret owner" in this scenario.
+
 
 • Using *Bitcannery*, you encode a secret locally with the first key.
 
