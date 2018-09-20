@@ -22,23 +22,23 @@ For more detailed information please read the [Lightpaper](https://bitcannery.ne
 
 ## How it works?
 
-• You have an information you want to keep. We call it a "secret" and you are a "secret owner" in this scenario.
+* You have an information you want to keep. We call it a "secret" and you are a "secret owner" in this scenario.
 
-• Using *Bitcannery*, you encode a secret locally with the first key.
+* Using *Bitcannery*, you encode a secret locally with the first key.
 
-• *Bitcannery* generates a second key, encodes the secret one more time and publishes the double encrypted secret on the blockchain.
+* *Bitcannery* generates a second key, encodes the secret one more time and publishes the double encrypted secret on the blockchain.
 
-• *Bitcannery* then splits the second key in chunks and distribues them between agents (using [Shamir's Secret Sharing algorithm](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)) who keep the chunks on their machines. We call them the "keepers".
+* *Bitcannery* then splits the second key in chunks and distribues them between agents (using [Shamir's Secret Sharing algorithm](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)) who keep the chunks on their machines. We call them the "keepers".
 
 ![](encrypting_secret_on_a_blockchain.jpg)
 
-• Using *Bitcannery*, you perform a predefined periodic action (run some script or visit some website). We call it a "check-in".
+* Using *Bitcannery*, you perform a predefined periodic action (run some script or visit some website). We call it a "check-in".
 
-• As long as you check-in, your secret is encoded.
+* As long as you check-in, your secret is encoded.
 
 ![](storing_secrets_on_a_blockchain.jpg)
 
-• When you stop checking-in, keepers return their key parts and the second key is
+* When you stop checking-in, keepers return their key parts and the second key is
 re-assembled. Your secret gets decoded and published on the blockchain.
 
 ![](decrypting_secret_on_the_blockchain.jpg)
