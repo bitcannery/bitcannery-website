@@ -47,7 +47,7 @@ App will ask you to choose name for the message delivery contract, password for 
 
 App will output `Waiting for keepers...`, and after some time it will ask to choose Keepers amount. Next app will deploy your new contract in Ethereum blockchain and print you **private key**. Pass it with your chosen contract name to person you want to receive the message. *Important* If your addressee will loose the key, there is no way to recover it and secret will be lost!
 
-_Demo: create secret file and deploy it to the network_[![asciicast](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq.png)](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq)
+Demo: create secret file and deploy it to the network: [![asciicast](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq.png)](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq)
 
 ## Check-in
 
