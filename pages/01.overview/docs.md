@@ -45,10 +45,10 @@ re-assembled. Your secret gets decoded and published on the blockchain.
 
 ## Security
 
-Keepers are unaware of which secret they're keeping, so even if majority of the keepers are malicious it is very hard for them to reconstruct a complete key. For a succesful Sybil attack, 66% of all keepers would have to cooperate. Even if it's done somehow (by identifying existing keepers or by flooding the system with the new ones), the attacker would only get the data encrypted with the first key, kept privately by the secret owner.
+Keepers are unaware of which secret they're keeping, so even if majority of the keepers are malicious it's very hard for them to reconstruct a complete key. For a succesful Sybil attack, 66% of all keepers would have to cooperate. Even if it's done somehow (by identifying the existing keepers or by flooding the system with the new ones), the attacker would only get the data encrypted with the first key, kept privately by the secret owner.
 
 ## Economy
 
-To motivate the keepers, simple monetary model is used. Every keeper earns a fee for performing his/her part. Fee is set by the secret owner, so it is up to each keeper to accept specific keeping contract or not.
+To motivate the keepers, simple monetary model is used. Every keeper earns a fee for performing his/her part. Fee is set by the secret owner, so it's up to each keeper to accept specific keeping contract or not.
 
 There is a rating system planned which would make sure stable and honest keepers are paid higher (not implemented yet).
