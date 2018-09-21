@@ -47,6 +47,8 @@ App will ask you to choose name for the message delivery contract, password for 
 
 App will output `Waiting for keepers...`, and after some time it will ask to choose Keepers amount. Next app will deploy your new contract in Ethereum blockchain and print you **private key**. Pass it with your chosen contract name to person you want to receive the message. *Important* If your addressee will loose the key, there is no way to recover it and secret will be lost!
 
+<script src="https://asciinema.org/a/JmtxqGBAl1cgJAIikAKMcGZsW.js" id="asciicast-JmtxqGBAl1cgJAIikAKMcGZsW" async></script>
+
 [![asciicast](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq.png)](https://asciinema.org/a/3VqnAUpnAhKoyzeSAUuHEHdJq)
 (Demo: create secret file and deploy it to the network)
 
@@ -61,7 +63,7 @@ Secret is safe while you perform check-ins. Secret will be decoded after you sto
 App will ask you for a contract name and to confirm. If there's not enough active Keepers to keep the message safe, it'll offer you to do Keeper rotation.
 
 [![asciicast](https://asciinema.org/a/i3nrhIOSr5Awufo5bgpvkdlWA.png)](https://asciinema.org/a/i3nrhIOSr5Awufo5bgpvkdlWA)
-(Demo: periodical check-ins)
+(Demo: periodic check-ins)
 
 ## Rotate Keepers
 
