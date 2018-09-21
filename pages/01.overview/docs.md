@@ -1,6 +1,6 @@
 ---
 title: Overview
-media_order: 'coat_of_arms.png,decrypting_secret_on_the_blockchain.jpg,encrypting_secret_on_a_blockchain.jpg,storing_secrets_on_a_blockchain.jpg'
+media_order: 'coat_of_arms.png,decrypting_secret_on_the_blockchain.jpg,encrypting_secret_on_a_blockchain.jpg,storing_secrets_on_a_blockchain.jpg,encrypting_secret_on_a_blockchain.svg'
 taxonomy:
     category:
         - docs
@@ -30,7 +30,7 @@ For more detailed information please read the [Lightpaper](https://bitcannery.ne
 
 * *Bitcannery* then splits the second key in chunks and distribues them between agents (using [Shamir's Secret Sharing algorithm](https://en.wikipedia.org/wiki/Shamir%27s_Secret_Sharing)) who keep the chunks on their machines. We call them the "keepers".
 
-![](encrypting_secret_on_a_blockchain.jpg)
+![](encrypting_secret_on_a_blockchain.svg)
 
 * Using *Bitcannery*, you perform a predefined periodic action (run some script or visit some website). We call it a "check-in".
 
