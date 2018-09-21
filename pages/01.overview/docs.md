@@ -1,6 +1,6 @@
 ---
 title: Overview
-media_order: 'coat_of_arms.png,decrypting_secret_on_the_blockchain.jpg,encrypting_secret_on_a_blockchain.jpg,storing_secrets_on_a_blockchain.jpg,encrypting_secret_on_a_blockchain.svg'
+media_order: 'coat_of_arms.png,decrypting_secret_on_the_blockchain.jpg,encrypting_secret_on_a_blockchain.jpg,storing_secrets_on_a_blockchain.jpg,decrypting_secret_on_the_blockchain.svg,encrypting_secret_on_a_blockchain.svg,storing_secrets_on_a_blockchain.svg'
 taxonomy:
     category:
         - docs
@@ -36,12 +36,12 @@ For more detailed information please read the [Lightpaper](https://bitcannery.ne
 
 * As long as you check-in, your secret is encoded.
 
-![](storing_secrets_on_a_blockchain.jpg)
+![](storing_secrets_on_a_blockchain.svg)
 
 * When you stop checking-in, keepers return their key parts and the second key is
 re-assembled. Your secret gets decoded and published on the blockchain.
 
-![](decrypting_secret_on_the_blockchain.jpg)
+![](decrypting_secret_on_the_blockchain.svg)
 
 ## Security
 
