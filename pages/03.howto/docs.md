@@ -60,8 +60,8 @@ Secret is safe while you perform check-ins. Secret will be decoded after you sto
 
 App will ask you for a contract name and to confirm. If there's not enough active Keepers to keep the message safe, it'll offer you to do Keeper rotation.
 
-_Demo: periodical check-ins:_
 [![asciicast](https://asciinema.org/a/i3nrhIOSr5Awufo5bgpvkdlWA.png)](https://asciinema.org/a/i3nrhIOSr5Awufo5bgpvkdlWA)
+(Demo: periodical check-ins)
 
 ## Rotate Keepers
 
@@ -93,8 +93,8 @@ To get the message from the contract, you need to know it's name in BitCannery a
 
 `<name-of-your-contract>` is the name of contract you've received with the private key. App will ask you for this key, and either decrypt the message or ask to wait for more keepers to send their message parts. In latter case try decrypting the message in a couple of hours.
 
-_Demo: stopping check-ins and decode the secret:_
 [![asciicast](https://asciinema.org/a/JmtxqGBAl1cgJAIikAKMcGZsW.png)](https://asciinema.org/a/JmtxqGBAl1cgJAIikAKMcGZsW)
+(Demo: stopping check-ins and decode the secret)
 
 ## Run as a Keeper
 
