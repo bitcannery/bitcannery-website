@@ -19,6 +19,7 @@ At the moment it is implemented on the Ethereum blockchain and deployed to the R
 You can find a [source code on Github](https://github.com/bitcannery/bitcannery-cli).  
 To download the binary and see some usage examples please visit the [How-to](https://bitcannery.net/howto).  
 For more detailed information please read the [Lightpaper](https://bitcannery.net/lightpaper).
+
 Contact us: [pavel@bitcannery.net](mailto:pavel@bitcannery.net).
 
 ## How it works?
