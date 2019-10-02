@@ -6,7 +6,7 @@ taxonomy:
 visible: true
 ---
 
-Current web protocols powered by cryptography provide sutisfactory means to pass a secret message from one person (the sender) to another (the recipient) without exposing it to anyone else, such as end-to-end encrypted communications tools like Signal. But to shift the time of passing an encrypted message to the future — we have to trust a third party to do it for us.
+Current web protocols powered by cryptography provide satisfactory means to pass a secret message from one person (the sender) to another (the recipient) without exposing it to anyone else, such as end-to-end encrypted communications tools like Signal. But to shift the time of passing an encrypted message to the future — we have to trust a third party to do it for us.
 
 Our system attempts to limit the the exposure of a secret to a third party and achieve a secure and trustless delivery of encrypted messages which could not be read by the recipient before a trigger event. To make this happen, system relies on the network of third-party agents — the keepers. Keepers don't have any access to the original message, they merely hold parts of a key required to decrypt the message and are motivated to keep it secret until a trigger event in the future.
 
@@ -16,13 +16,13 @@ Such system can be useful for releasing a password to encrypted files to relativ
 
 ## Problem
 
-We want to deliver encrypted message at some future moment of time. By means of asymmetric encryption one could pass a message so only it's recipient could read it. But to achieve time-locking one should postpone the very delivery of the message. If sender must send message now and not later, they must refrain to trusting some third party to deliver the message, with nothing but the trust and contract forcing thar third party to do the delivery job. There's no easy way to eliminate the trust, but there are solutions for different use-cases.
+We want to deliver encrypted message at some future moment of time. By means of asymmetric encryption one could pass a message so only it's recipient could read it. But to achieve time-locking one should postpone the very delivery of the message. If sender must send message now and not later, they must refrain to trusting some third party to deliver the message, with nothing but the trust and contract forcing that third party to do the delivery job. There's no easy way to eliminate the trust, but there are solutions for different use cases.
 
 There are time-locked encryption techniques [^1]. The main idea is to seal original message with resource- and time-consuming encryption, designed to be decrypted not faster than some timeout. While being solution to some of the use-cases, this way requires big amount of resources from the recipient and doesn't ensure exact timeout.
 
 The simple and centuries-tested solution is to trust attorney to check the event and pass the message then required. Drawbacks are quite obvious: in case something happens with attorney before event, they wouldn't be able to perform their part of the contract.
 
-For more specific use-cases there could be automated trustless solutions. For instance, if we want to transfer Ethereum funds or smart contract ownership, we could build smart contract which transfers funds or ownership if the first owner fails to check in during predefined time period.
+For more specific use cases there could be automated trustless solutions. For instance, if we want to transfer Ethereum funds or smart contract ownership, we could build smart contract which transfers funds or ownership if the first owner fails to check in during predefined time period.
 
 ## Current solutions
 
@@ -43,7 +43,7 @@ of Smart contract ownership; doesn't fit free-form message relay use-case. [^2]
 Bitcannery is a secure trustless deferred free-form message relay.
 Bitcannery system leans on secret sharing techniques and the network of third-party actors keeping parts of secrets and incentivised to reveal them only in time of future event — be it timeout or passing canary checkin.
 
-The main idea is to store message in the blockchain, but encrypt it so neither Bob nor anyone else could read it before trigger event and only Bob could after that event. As all the data in blockchain is open to read for anyone, we need to encrypt message at least two times: first to prevent anyone but Bob to read it (use asymmetric crypto), second — to prevent Bob from accessing his message before trigger event. To open the message after trigger event, Bitcannery uses a network of `keepers` — agents with access to parts of the decryption key. The key is divided with Shamir's secret sharing method [^3], so we don't need every single key part to be able to decrypt Bob's message. After saving encrypted key partsand twice-encrypted message to blockchain smart contract, Alice performs canary checkins within predefined time interval. After missed Alice's checkin keepers decrypt their key parts and send them to smart contract. Once enough keepers had revealed their key parts, Bob restores decryption key from keepers' shards, and then decrypts message from smart contract twice, receiving the Alice's message.
+The main idea is to store message in the blockchain, but encrypt it so neither Bob nor anyone else could read it before trigger event and only Bob could after that event. As all the data in blockchain is open to read for anyone, we need to encrypt message at least two times: first to prevent anyone but Bob to read it (use asymmetric crypto), second — to prevent Bob from accessing his message before trigger event. To open the message after trigger event, Bitcannery uses a network of "keepers" — agents with access to parts of the decryption key. The key is divided with Shamir's secret sharing method [^3], so we don't need every single key part to be able to decrypt Bob's message. After saving encrypted key partsand twice-encrypted message to blockchain smart contract, Alice performs canary checkins within predefined time interval. After missed Alice's checkin keepers decrypt their key parts and send them to smart contract. Once enough keepers had revealed their key parts, Bob restores decryption key from keepers' shards, and then decrypts message from smart contract twice, receiving the Alice's message.
 
 Note that Bitcannery could be used for both timed-out message delivery and dead-man-switch-like mechanics. The main difference would be trigger event for keepers to reveal their parts of the secret.
 Some parts of current Bitcannery implementation are dependent on specific blockchain features. For reference implementation we've used Ethereum Smart contracts. 1) Smart contract couldn't call its own methods; 2) There's no timeouts for Ethereum Smart contracts; 3) There's no private data store for Ethereum Smart contracts.
@@ -52,7 +52,7 @@ Some parts of current Bitcannery implementation are dependent on specific blockc
 That being said, one should note that Bitcannery protocol could be implemented on top of any blockchain with Smart contracts with comparable to Ethereum's properties.
 
 There are finer details:
-1. To get list of keepers to choose from, Alice starts her contract in `call for keepers` state. Actors interested in being a keeper for Alice contract send proposals with their payment rate and public keys. All Bitcannery contracts are registered in registry-contract, so keepers could find new ones to send proposals to.
+1. To get list of keepers to choose from, Alice starts her contract in "call for keepers" state. Actors interested in being a keeper for Alice contract send proposals with their payment rate and public keys. All Bitcannery contracts are registered in registry-contract, so keepers could find new ones to send proposals to.
 After enough keeper proposals are gathered, Alice chooses which ones to accept. With keepers list accepted, she saves the message and key parts in smart contract and starts canary checkins.
 2. Due to the fact that Ethereum Smart contracts couldn't initiate actions, we need third party actor to check whether trigger event has come or not. In current design this actors are contract keepers.
 3. It's very likely not all the keepers will stay active at all times. If a keeper misses couple checkin periods in a row, he will no longer receive a keeping fee.
