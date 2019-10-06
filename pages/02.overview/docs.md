@@ -19,11 +19,11 @@ At the moment it is implemented on the Ethereum blockchain, but it doesn't have 
 
 The DAPP is deployed on the mainnet: [Bitcannery dapp](https://bitcannery.github.io/bitcannery-dapp/).
 
-The command line implementation [source code on Github](https://github.com/bitcannery/bitcannery-cli).
+The command line implementation: [source code on Github](https://github.com/bitcannery/bitcannery-cli).
 
-To download the binary and see some usage examples please visit the [How-to](https://bitcannery.net/howto).
+To download the binary and see some usage examples please read [How-to](https://bitcannery.net/howto).
 
-For more detailed information please read the [Lightpaper](https://bitcannery.net/lightpaper).
+For more detailed information please see [Lightpaper](https://bitcannery.net/lightpaper).
 
 Contact us: [pavel@bitcannery.net](mailto:pavel@bitcannery.net).
 
