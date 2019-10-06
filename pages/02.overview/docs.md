@@ -10,7 +10,7 @@ visible: true
 
 ![](coat_of_arms.png)
 
-*Bitcannery* is a system designed to provide an encryption with extendable self-decryption time. In a nutshell, such encryption ensures that a message is automatically decrypted after a certain point in the future. This point in time can be continuously extended by the sender of the message.
+*Bitcannery* is a platform designed to provide an encryption with extendable self-decryption time. Such encryption ensures that a message is automatically decrypted after a certain point in the future. This point in time can be continuously extended by the sender of the message.
 
 Real life applications may include data escrow, leaking, last-resort backups, inheritance, insurance and even a simple data storage.
 
