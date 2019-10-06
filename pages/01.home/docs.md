@@ -8,7 +8,7 @@ child_type: docs
 visible: true
 ---
 
-![](coat_of_arms.png =240x240)
+![](coat_of_arms.png)
 
 *Bitcannery* is a system designed to provide an encryption with extendable self-decryption time.
 
