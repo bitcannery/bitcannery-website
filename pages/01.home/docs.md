@@ -1,6 +1,6 @@
 ---
 title: Home
-media_order: 'coat_of_arms.png'
+media_order: coat_of_arms.png
 taxonomy:
     category:
         - docs
