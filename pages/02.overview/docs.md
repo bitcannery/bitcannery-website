@@ -10,11 +10,12 @@ visible: true
 
 ![](coat_of_arms.png)
 
-*Bitcannery* is a platform designed to provide an encryption with extendable self-decryption time. Such encryption ensures that a message is automatically decrypted after a certain point in the future. This point in time can be continuously extended by the sender of the message.
+*Bitcannery* time-locks an encrypted message on a blockchain to be auto-decrypted at a set point in time. 
+That point in time can be continuously pushed forward by the sender. 
 
-Real life applications may include data escrow, leaking, last-resort backups, inheritance, insurance and even a simple data storage.
+This is useful for timed-out message delivery, dead-man-switch-like applications, data escrow, data leaks, last-resort backups, disaster recovery, etc.
 
-At the moment it is implemented on the Ethereum blockchain and deployed to the Rinkeby testnet, but it doesn't have to be limited to Ethereum. *Bitcannery* system can be generalized for virtually any distributed ledger supporting smart contracts.
+At the moment it is implemented on the Ethereum blockchain, but it doesn't have to be bound to Ethereum. *Bitcannery* system can be generalized for virtually any distributed ledger supporting smart contracts.
 
 You can find a [source code on Github](https://github.com/bitcannery/bitcannery-cli).  
 To download the binary and see some usage examples please visit the [How-to](https://bitcannery.net/howto).  
