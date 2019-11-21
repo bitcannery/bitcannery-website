@@ -17,7 +17,7 @@ This is useful for timed-out message delivery, dead-man-switch-like applications
 
 At the moment it is implemented on the Ethereum blockchain, but it doesn't have to be bound to Ethereum. *Bitcannery* system can be generalized for virtually any distributed ledger supporting smart contracts.
 
-The DAPP is deployed on the mainnet: [Bitcannery dapp](https://bitcannery.github.io/bitcannery-dapp/).
+The DAPP is deployed on the mainnet: [Bitcannery dapp](https://dapp.bitcannery.net/).
 
 The command line implementation: [source code on Github](https://github.com/bitcannery/bitcannery-cli).
 
