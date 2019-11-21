@@ -1,5 +1,5 @@
 ---
-title: Howto
+title: 'CLI - Howto'
 taxonomy:
     category:
         - docs
