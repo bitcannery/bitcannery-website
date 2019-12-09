@@ -8,7 +8,9 @@ child_type: docs
 visible: true
 ---
 
+<!--
 ![](coat_of_arms.png)
+-->
 
 *Bitcannery* is a platform designed to provide an encryption with extendable self-decryption time.
 
